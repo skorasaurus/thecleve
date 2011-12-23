@@ -1,5 +1,5 @@
 Map {
-  background-color: #b8dee6;
+  background-color: #fff;
 }
 
 #countries {

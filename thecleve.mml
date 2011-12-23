@@ -6,13 +6,13 @@
     85.05112877980659
   ],
   "center": [
-    -81.69950723648064,
-    41.4687849577775,
-    13
+    -81.68179024010864,
+    41.47862732243082,
+    14
   ],
   "format": "png",
   "interactivity": false,
-  "minzoom": 0,
+  "minzoom": 11,
   "maxzoom": 22,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
@@ -51,5 +51,6 @@
   ],
   "description": "",
   "attribution": "",
-  "legend": ""
+  "legend": "",
+  "name": "Cleveland-basic-2011-12_15ish"
 }
