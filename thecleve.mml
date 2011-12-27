@@ -6,9 +6,9 @@
     85.05112877980659
   ],
   "center": [
-    -81.68179024010864,
-    41.47862732243082,
-    14
+    -81.70597437769119,
+    41.48469779384129,
+    17
   ],
   "format": "png",
   "interactivity": false,
@@ -52,5 +52,5 @@
   "description": "",
   "attribution": "",
   "legend": "",
-  "name": "Cleveland-basic-2011-12_15ish"
+  "name": "thecleve - Basic branch"
 }

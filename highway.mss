@@ -1,13 +1,35 @@
+
+/* remember outline, is the shell like*/
+
 #highway {
    ::outline {
-   
-    line-color:#000;
-    line-width:4.5;
+  line-color:#000;
+  [zoom>12]{ line-cap:round; line-join:round; }
+  [zoom=13]{ line-width:0.2; line-opacity:0.4; }
+  [zoom=14]{ line-width:0.4; line-opacity:0.6; }
+  [zoom=15]{ line-width:1; line-opacity:0.8; }
+  [zoom=16]{ line-width:1.6 + 2; }
+  [zoom=17]{ line-width:4 + 2; }
+  [zoom>17]{ line-width:7 + 3; }
   }
-
   line-color:#FFF;
-  line-width:1.5;
+  line-width:4.5;
 }
+
+/*break it down by: */ 
+
+/* Use this for service, becomes more faded as you zoom out */ 
+ /* 
+#highway {
+   ::outline { line-color:#000;
+  [zoom>12]{ line-cap:square; line-join:round; }
+  [zoom=13]{ line-width:0.2; line-opacity:0.4; }
+  [zoom=14]{ line-width:0.4; line-opacity:0.6; }
+  [zoom=15]{ line-width:1; line-opacity:0.8; }
+  [zoom=16]{ line-width:1.6 + 2; }
+  [zoom=17]{ line-width:4 + 2; }
+  [zoom>17]{ line-width:7 + 3; } */ 
+
 
 
 /*line-join:round; For views from zoom */
