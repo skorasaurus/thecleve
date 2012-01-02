@@ -6,9 +6,9 @@
     85.05112877980659
   ],
   "center": [
-    -81.71767015010023,
-    41.47573455582717,
-    15
+    -81.75472050905098,
+    41.46439208790171,
+    13
   ],
   "format": "png",
   "interactivity": false,
@@ -45,7 +45,10 @@
         "dbname": "thecleve",
         "host": "localhost",
         "user": "skorasaurus",
-        "password": "yessem"
+        "password": "yessem",
+        "id": "highway",
+        "project": "thecleve",
+        "srs": null
       }
     }
   ],
