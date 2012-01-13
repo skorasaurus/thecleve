@@ -72,9 +72,9 @@
    ::outline {
   line-color:#FF0000;
   [zoom>16]{ line-cap:round; line-join:round; }
-  [zoom=13]{ line-width:5; }
-  [zoom=14]{ line-width:5; }
-  [zoom=15]{ line-width:7; line-opacity:0.8; }
+  [zoom=13]{ line-width:5; line-opacity:0.79; }
+  [zoom=14]{ line-width:5; line-opacity:0.84; }
+  [zoom=15]{ line-width:7; line-opacity:0.9; }
   [zoom=16]{ line-width:7; }
   [zoom=17]{ line-width:8; }
   [zoom>17]{ line-width:7 + 3; }
@@ -97,14 +97,13 @@
   [zoom>17]{ line-width:7 + 3; }
   }
   line-color:#cecaca;
-  line-width:3.5;
+  line-width:5.5;
 }
 
-/* the following does Unclassified OR [residential AND bridge] */
-/* how to do [Unclassified or residential] AND bridge ? */
 
-#highway[highway='unclassified'],
-#highway[highway='residential'][bridge='yes']{
+
+#highway[highway='primary'][bridge='yes']
+{
   [zoom>12]{ line-cap:round; line-join:round; }
   [zoom=13]{ line-width:4; }
   [zoom=14]{ line-width:5; }
@@ -112,8 +111,25 @@
   [zoom=16]{ line-width:5 + 3; }
   [zoom=17]{ line-width:4 + 2; }
   [zoom>17]{ line-width:7 + 3; }
+  line-color:#FF0000;
+  line-width:3.5;
+}
+
+
+/* the following does Unclassified OR [residential AND bridge] */
+/* how to do [Unclassified or residential] AND bridge ? */
+
+#highway[highway='residential'][bridge='yes']{
+  [zoom>12]{ line-cap:round; line-join:round; }
+  [zoom=13]{ line-width:4; }
+  [zoom=14]{ line-width:5; }
+  [zoom=15]{ line-width:6; line-opacity:.2}
+  [zoom=16]{ line-width:5 + 3; }
+  [zoom=17]{ line-width:4 + 2; }
+  [zoom>17]{ line-width:7 + 3; }
   line-color:#4682b4;
   line-width:3.5;
+  
 }
 
 
