@@ -21,7 +21,7 @@
 #highway[highway='service'] {
    ::outline {
   line-color:#cecaca;
-  [zoom>12]{ line-cap:round; line-join:round; }
+ /* [zoom>12]{ line-cap:round; line-join:round; } */
   [zoom=13]{ line-width:0.2; line-opacity:0.4; }
   [zoom=14]{ line-width:0.4; line-opacity:0.7; }
   [zoom=15]{ line-width:3; }
@@ -37,10 +37,10 @@
 #highway[highway='unclassified'] {
    ::outline {
   line-color:#1091e0;
-  [zoom>16]{ line-cap:round; line-join:round; }
   [zoom=13]{ line-width:0.2; line-opacity:0.4; }
   [zoom=14]{ line-width:5; line-opacity:0.6; }
   [zoom=15]{ line-width:7; line-opacity:0.8; }
+/*   [zoom>16]{ line-cap:round; line-join:round; } */
   [zoom=16]{ line-width:7; }
   [zoom=17]{ line-width:8; }
   [zoom>17]{ line-width:7 + 3; }
@@ -52,11 +52,12 @@
 
 #highway[highway='tertiary'] {
    ::outline {
-  line-color:#1091e0;
-  [zoom>16]{ line-cap:round; line-join:round; }
+  line-color:#FF6E00;
+
   [zoom=13]{ line-width:0.2; line-opacity:0.4; }
   [zoom=14]{ line-width:5; line-opacity:0.6; }
   [zoom=15]{ line-width:7; line-opacity:0.8; }
+  [zoom>16]{ line-cap:round; line-join:round; }
   [zoom=16]{ line-width:7; }
   [zoom=17]{ line-width:8; }
   [zoom>17]{ line-width:7 + 3; }
@@ -101,7 +102,7 @@
 }
 
 
-
+#highway[highway='secondary'],
 #highway[highway='primary'][bridge='yes']
 {
   [zoom>12]{ line-cap:round; line-join:round; }
@@ -114,6 +115,24 @@
   line-color:#FF0000;
   line-width:3.5;
 }
+
+/* need to adjust endcaps here*/
+#highway[highway='tertiary'][bridge='yes'] {
+   ::outline {
+  line-color:#FF6E00;
+  [zoom>16]{ line-cap:round; line-join:round; }
+  [zoom=13]{ line-width:0.2; line-opacity:0.4; }
+  [zoom=14]{ line-width:5; line-opacity:0.6; }
+  [zoom=15]{ line-width:7; line-opacity:0.8; }
+  [zoom=16]{ line-width:7; }
+  [zoom=17]{ line-width:8; }
+  [zoom>17]{ line-width:7 + 3; }
+  }
+  line-color:#FF6E00;
+  line-width:4.5;
+}
+
+
 
 
 /* the following does Unclassified OR [residential AND bridge] */
