@@ -37,7 +37,7 @@
 #highway[highway='unclassified'] {
    ::outline {
   line-color:#1091e0;
-  [zoom=13]{ line-width:0.2; line-opacity:0.4; }
+  [zoom=13]{ line-width:4; line-opacity:0.4; }
   [zoom=14]{ line-width:5; line-opacity:0.6; }
   [zoom=15]{ line-width:7; line-opacity:0.8; }
 /*   [zoom>16]{ line-cap:round; line-join:round; } */
@@ -56,7 +56,7 @@
 
   [zoom=13]{ line-width:0.2; line-opacity:0.4; }
   [zoom=14]{ line-width:5; line-opacity:0.6; }
-  [zoom=15]{ line-width:7; line-opacity:0.8; }
+  [zoom=15]{ line-width:7}
   [zoom>16]{ line-cap:round; line-join:round; }
   [zoom=16]{ line-width:7; }
   [zoom=17]{ line-width:8; }
