@@ -1,11 +1,4 @@
 
 Goals: 
 
-- creating a stylesheet to be used in tilemill, to browse neighborhoods. 
-
-This will be forked one day. 
-
-1. convert the OSM file to a shapefile 
-2. if not, then download the old one from cloudmade 
-3. then find, somewhere, I forget, that for cloudmade extracts, you have to do something to the files before they work in tilemill, 
-[wait, why is the stylesheet, highway.mss for open-streets-dc a lot different than one on open-streets [github page] ?
+- creating a stylesheet to be used in tilemill, to browse neighborhoods, use as a basis for neighborhood level zooming. 
